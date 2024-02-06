@@ -1122,6 +1122,11 @@ function _prepareRequest(endpoint, options, type, gennonce, auth) {
 }
 exports._prepareRequest = _prepareRequest;
 function _sendRequest(requestOptions, postdata, encoding, timeout) {
+    if (requestOptions.path != null && requestOptions.path.includes("public")) {
+        requestOptions.method = "GET";
+        requestOptions.path += "?" + postdata;
+    }
+    console.log(requestOptions);
     return new Promise((resolve, reject) => {
         try {
             let didRespond = false;

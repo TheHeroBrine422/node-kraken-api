@@ -5283,6 +5283,13 @@ export function _sendRequest(
   encoding: "utf8" | "binary",
   timeout: number
 ) {
+
+  // THIS IS A HACK TO GET THINGS WORKING. THIS SHOULD BE IMPROVED IN THE FUTURE
+  if (requestOptions.path != null && requestOptions.path.includes("public")) {
+    requestOptions.method = "GET";
+    requestOptions.path += "?" + postdata
+  }
+
   return new Promise((resolve, reject) => {
     try {
       let didRespond = false;

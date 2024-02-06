@@ -1,20 +1,26 @@
 [![](https://github.com/jpcx/node-kraken-api/blob/2.2.2/logo.png)](#)
 
-[![](https://img.shields.io/github/issues/jpcx/node-kraken-api)](#)
-[![](https://img.shields.io/github/forks/jpcx/node-kraken-api)](#)
-[![](https://img.shields.io/github/stars/jpcx/node-kraken-api)](#)
+[![](https://img.shields.io/github/issues/TheHeroBrine422/node-kraken-api)](#)
+[![](https://img.shields.io/github/forks/TheHeroBrine422/node-kraken-api)](#)
+[![](https://img.shields.io/github/stars/TheHeroBrine422/node-kraken-api)](#)
 [![](https://img.shields.io/npm/dm/node-kraken-api)](#)
 [![](https://img.shields.io/librariesio/dependents/npm/node-kraken-api)](#)
 [![](https://img.shields.io/github/license/jpcx/node-kraken-api)](#)
 
 [![](https://nodei.co/npm/node-kraken-api.png?mini=true)](https://www.npmjs.com/package/node-kraken-api)
 
+## Fork Info
+
+This is a fork of jpcx's node-kraken-api. They seemed to stop supporting their version since 2022 and after kraken's changes in Jan 2024 to remove support for POST requests for public, parts of jpcx's version stopped working.
+
+This fork is mostly intended to fix that issue and allow this library to continue working. I am going to try to support this given I am fixing it to use it myself, but I make absolutely no promises about the continued functionality of this library.
+
 ## About
 
 node-kraken-api is a typed REST/WS Node.JS client for the Kraken cryptocurrency exchange.  
 This is an unofficial API. Please refer to the official documentation for up-to-date information.
 
-REST API Docs: [kraken.com/features/api](https://www.kraken.com/features/api)  
+REST API Docs: [docs.kraken.com/rest/](https://docs.kraken.com/rest/)  
 WebSocket API Docs: [docs.kraken.com/websockets](https://docs.kraken.com/websockets/)
 
 ### Features
