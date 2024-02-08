@@ -5288,7 +5288,10 @@ export function _sendRequest(
   if (requestOptions.path != null && requestOptions.path.includes("public")) {
     requestOptions.method = "GET";
     requestOptions.path += "?" + postdata
+    postdata = null
   }
+
+  console.log(requestOptions)
 
   return new Promise((resolve, reject) => {
     try {

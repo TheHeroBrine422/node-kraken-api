@@ -1,13 +1,12 @@
 {
-  "name": "node-kraken-api",
-  "version": "2.2.2",
+  "name": "@hero422/node-kraken-api",
+  "version": "2.2.4",
   "description": "a typed REST/WS Node.JS client for the Kraken cryptocurrency exchange",
   "license": "MIT",
   "repository": "git://github.com/jpcx/node-kraken-api.git",
   "author": {
-    "name": "Justin Collier",
-    "email": "m@jpcx.dev",
-    "url": "https://github.com/jpcx"
+    "name": "Hero",
+    "email": "caleb@calebgj.io"
   },
   "keywords": [
     "kraken",
@@ -32,11 +31,10 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "clean": "rm -f index.js; rm -f index.d.ts; rm -rf test/.build; rm -rf codegen/.build",
     "build": "tsc --pretty -p .",
-    "test": "npm run clean && tsc --pretty -p test && npx testts test/.build/test/test.js",
-    "codegen": "npm run clean && tsc --pretty -p codegen && sh codegen/codegen.sh",
-    "prepare": "npm run clean && npm run build"
+    "test": "tsc --pretty -p test && npx testts test/.build/test/test.js",
+    "codegen": "tsc --pretty -p codegen && sh codegen/codegen.sh",
+    "prepare": "npm run build"
   },
   "engines": {
     "node": ">=10.0.0"
