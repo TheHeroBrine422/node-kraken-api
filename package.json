@@ -1,9 +1,12 @@
 {
   "name": "@hero422/node-kraken-api",
-  "version": "2.2.4",
+  "version": "2.2.6",
   "description": "a typed REST/WS Node.JS client for the Kraken cryptocurrency exchange",
   "license": "MIT",
-  "repository": "git://github.com/jpcx/node-kraken-api.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TheHeroBrine422/node-kraken-api.git"
+  },
   "author": {
     "name": "Hero",
     "email": "caleb@calebgj.io"

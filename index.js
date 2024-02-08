@@ -1127,7 +1127,6 @@ function _sendRequest(requestOptions, postdata, encoding, timeout) {
         requestOptions.path += "?" + postdata;
         postdata = null;
     }
-    console.log(requestOptions);
     return new Promise((resolve, reject) => {
         try {
             let didRespond = false;

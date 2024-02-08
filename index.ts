@@ -5291,8 +5291,6 @@ export function _sendRequest(
     postdata = null
   }
 
-  console.log(requestOptions)
-
   return new Promise((resolve, reject) => {
     try {
       let didRespond = false;
